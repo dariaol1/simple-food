@@ -15,7 +15,45 @@
 
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+
+<body id="home">
+  <header class="header">
+    <div class="container">
+      <nav class="menu">
+        <a class="logo" href="#home">
+          <img class="logo_img" src="images/logo.svg" alt="simple food логотип">
+        </a>
+
+        <div class="menu__inner">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">главная</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">блюда</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">контакты</a>
+            </li>
+          </ul>
+
+          <ul class="menu__nav">
+            <li class="menu__nav-item">
+              <a class="menu__nav-link" style="background-image: url('images/icons/search-icon.svg')" href="#">
+                <span class="visually-hidden">открыть поиск</span>
+              </a>
+            </li>
+            <li class="menu__nav-item">
+              <a class="menu__nav-link" style="background-image: url('images/icons/cart-icon.svg')" href="#">
+                <span class="menu__nav-num">4</span>
+                <span class="visually-hidden">перейти в корзину</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
 
   <script src="js/main.min.js"></script>
 </body>

@@ -3,6 +3,17 @@
 @import 'reset';
 @import 'global';
 
+.header {
+  padding: 60px 0;
+}
+
+.menu {
+  display: flex;
+
+  &__inner {
+    display: flex;
+  }
+}
 
 
 
