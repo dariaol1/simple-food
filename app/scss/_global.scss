@@ -1,14 +1,48 @@
+html,
+body {
+  height: 100%;
+}
+
 body {
   color: $default-color;
   font-size: 20px;
   line-height: 1.5;
   @extend %rubik-400;
+  background-color: $bg-color;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
 }
 
 .container {
-  min-width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.logo {
+  padding: 7px 0 1px 3px;
+  transition: opacity 0.3s, box-shadow 0.3s, border-radius 0.3s;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:focus {
+  border-radius: 5px;
+  box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+}
+
+.logo:active {
+  opacity: 0.5;
+}
+
+.section {
+  padding: 60px 0;
 }
 
 .visually-hidden {
@@ -22,3 +56,6 @@ body {
   white-space: nowrap !important;
   border: 0 !important;
 }
+
+
+
